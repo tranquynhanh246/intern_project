@@ -1,0 +1,130 @@
+.account-setting-right {
+    background-color: #fff;
+    width: 75%;
+}
+.address {
+    padding: 1.25rem 1rem 2.5rem;
+}
+.address-item .address-item__icon {
+    background-color: #e4cdc7;
+    border-radius: 50%;
+    color: #ce5628;
+    display: inline-block;
+    font-weight: 600;
+    height: 1.5rem;
+    text-align: center;
+    width: 1.5rem;
+}
+.fal, .far {
+    font-family: "Font Awesome 5 Pro";
+}
+
+.fal {
+    font-weight: 300;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.address-item h3 {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: .5rem;
+}
+.address-item h3 span {
+    color: #ce5628;
+    font-weight: 700;
+}
+.address-item__content {
+    display: grid;
+    grid-template-columns: 50% 20% 20% 5% 5%;
+    padding: 1rem;
+}
+.adrress-item__content span {
+    font-weight: 600;
+}
+.btn-edit {
+    color: #248fed;
+}
+.btn-delete {
+    color: #ef4949;
+}
+span {
+    font-weight: 600;
+}
+.address-item .address-item__icon {
+    background-color: #e4cdc7;
+    border-radius: 50%;
+    color: #ce5628;
+    display: inline-block;
+    font-weight: 600;
+    height: 1.5rem;
+    text-align: center;
+    width: 1.5rem;
+}
+.address__plus {
+    background-color: #f3f6ff;
+    border: 1px dashed #248fed;
+    box-sizing: border-box;
+    color: #248fed;
+    font-weight: 700;
+    padding: 1.25rem 2.375rem;
+}
+.address__plus i {
+    margin-right: .5rem;
+}
+.address {
+    padding: 1.25rem 1rem 2.5rem;
+}
+
+/* code của phần coupon */
+.coupon-container {
+    grid-gap: 1rem 1.825rem;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    padding: 1.5rem 1rem 2.5rem;
+}
+.coupon-item {
+    align-items: center;
+    display: flex;
+}
+.coupon-item__image {
+    height: 4.5rem;
+    margin-right: .825rem;
+    width: 4.5rem;
+}
+.coupon-item__image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+img {
+    border-style: none;
+    vertical-align: middle;
+}
+img:hover {
+    transition: .3s linear;
+}
+.coupon-item__content h3 {
+    font-size: .93rem;
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+.coupon-item__content .date {
+    color: #868686;
+    font-size: .75rem;
+    margin-bottom: .5rem!important;
+}
+.coupon-item__content .use {
+    color: #248fed;
+    font-size: .75rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+

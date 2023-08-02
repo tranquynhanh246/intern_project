@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_about_us.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Thư viện CSS của Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Thư viện JavaScript của Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascrit" src="/javascript/main.js"></script>
+    <link rel="stylesheet" href="/css/style_about_us.css">
+</head>
+<body>
+    <div id="root">
+        <div class="app">
+            <div class="root">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <nav class="nav">
+                            <li>
+                                <a aria-current="page" class="active" href="/html/index.html"> Trang chủ </a>
+                            </li>
+                            <li>
+                                <a class href=""> Thực đơn </a>
+                            </li>
+                            <li>
+                                <a class href="/html/about_us.html">Về chúng tôi</a>
+                            </li>
+                            <li>
+                                <a class href="/html/news.html">Tin tức</a>
+                            </li>
+                            
+                            <a class href="/html/order_button.html">
+                                <button class="button" style="width:8.5rem; height: 2.5rem;">Đặt tiệc ngay</button>
+                            </a>
+                            
+                        </nav>
+                        <div class="header-right">
+                            <div class="search">
+                                <div class="search-input">
+                                    <input type="text" placeholder="Tìm kiếm món ăn">
+                                </div>
+                                <div class="search-image">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVHgBlZCBDYIwFERPJ+gIfwRHYIRuoCO4gWwCI+gEjCAbECfADfRqj1jID4RLXtr+z5V/Bf4K5EaeZNTaEIMj0wcdiTpXpJX5vDQ0anq6yGTl7bOCo5bU0+FK7lhX1Mg4qjBuGN7TJhl65IBrOpFXWRjgvIRk6seyWJEPcp5lfRABzm9TI+Xpin2NHDgRDvDnNeSgvdagSx7Yod9IX21cJPyOvc8OAAAAAElFTkSuQmCC" alt="icon-search">
+                                </div>
+                            </div>
+                            <div class="account">
+                                <div class="account-icon" onClick="myFunction()">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFpSURBVHgBlVWBcYMwDHwyARvUG5QNQjdIJygjsAFsUDZIN6CdgG5AOwF0AkagdngHxcik/bsPF0l+JFk2CfaRkYb/vyxHPv+FynKynC0Hy47sha34i5DhIidWW6aRmIKiA9bs1UAn1EaEtPiWopnmdI4msOdYSvXld7RJNFqmZxolKiFSkr6HZRDbM9trdnPwBm+rsUVDXxZUMvN5CeiglxHDhG17nEZzsD9Hy4/A+Wj5jTg+sd1dp3E80BEO6o/lA+LQpmD0L7nWLnCK2B0y+orAntN+6cdJWeh2Tp6IlHETfVAEJ7+wjGTi509ygjLI1OgSLKPhNuYpEPMn5h3rBjn7C5Z+PeO2952P8z3J6TCiLIMtDF8mM80RzPIbBVK+acD989xjnV8Xf5bOlMYW+g5qyLEeTfXWMXTM2LmSgiT2NulG1PEV8R5WFNq9DyUKrNm6hf7GlrZaW5jcEfbfE1/SiGVUot+UX3+PeNnpLVbnAAAAAElFTkSuQmCC" alt="icon-account">
+                                </div>
+                                <div class="account-text">
+                                    <p>Tài khoản</p>
+                                </div>
+                                <div class="model">
+                                    <div class="model__item">
+                                        <ul>
+                                            <li><a href="/html/personal_info.html">Thông tin cá nhân</a></li>
+                                            <li><a href="/html/address.html">Cài đặt địa chỉ</a></li>
+                                            <li><a href="/html/index.html">Quản lý đơn hàng</a></li>
+                                            <li><a href="/html/coupon.html">Mã đã lưu</a></li>
+                                            <li><a style='color:#d2691e; font-weight: 700;' href="/html/index.html">Đăng xuất</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <div class="cart-image">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEjSURBVHgBrVSBUcMwDPz2OkA2aDbAI2QDsgFhgnYD2ABGCCMwQcMEZQPMBIQJgkVejeq6aXvnv/tTrMhvyVICnKIIrJAZu8Ah8AEZsaXoT2CJjGgpvEdGyL1+UfgFGVFRdMCNjVvQOozZxXiioA98xGV48r+8ISPrBR9E/W0mAxmvEmMDv8/ESKUbiVkZxxrzZZWYH7Gj63tGvtJltmsV3tFZXJtJlHXD/Y0N0K9oy/WeB8Xv10bQxmtS4seSzpb2nrbHOErFmSwrWk8hWXdcH0R7OlXonX6HNPTwT3PAYXqWJlCFGgYLaqThGOMx/c26lGhrsui4QdHT/mK6ig8kSk9BL9xhmkulSzxvkOh6DO3yrbNZWpFVJPpKe4frIQ3y1vEHsct2Y7HmFPwAAAAASUVORK5CYII=" alt="icon-cart">
+                                </div>
+                                <div class="cart-icon">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="my-container">
+                <div class="ant-row ant-row-space-between content" style="row-gap: 0px;">
+                    <div class="ant-col ant-col-6 title">
+                        <div class="text" style="font-size: 2.5rem;">SỰ LỰA CHỌN ẨM THỰC SỐ 1</div>
+                        <a href="">
+                            <div style="width: 12rem; height:4rem; background: rgb(210,105,30); text-transform: uppercase;
+                            color: white; display: flex; align-items:center; justify-content:center;">XEM HÌNH ẢNH TIỆC</div>
+                        </a>
+                    </div>
+                    <div class="ant-col ant-col-16 detail">
+                        <iframe src="https://www.youtube.com/watch?v=RIlpdxXwjuA" title="YouTube video player" allowfullscreen> #document</iframe>
+                        <div class="information">
+                            <div class="ant-row ant-row-start" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;">
+                                <div class="ant-col ant-col-12" style="padding-left:8px; padding-right: 8px;">
+                                    <div class="ant-row ant-row-start information-item" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;">
+                                        <div class="ant-col ant-col-24" style="padding-left: 8px; padding-right: 8px;">
+                                            <div class="text" style="font-size: 1rem;">
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta ante dui, nec condimentum diam auctor nec. sInteger auctor turpis odio, eu lacinia lorem ultricies at. Morbi maximus in sem vitae tempor. Donec dictum lectus et bibendum faucibus. Integer mollis arcu sit amet mollis blandit."
+                                            </div>
+                                        </div>
+                                        <div class="ant-col ant-col-24" style="padding-left: 8px; padding-right: 8px;">
+                                            <div class="text" style="font-size: 1rem;">
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta ante dui, nec condimentum diam auctor nec. sInteger auctor turpis odio, eu lacinia lorem ultricies at. Morbi maximus in sem vitae tempor. Donec dictum lectus et bibendum faucibus. Integer mollis arcu sit amet mollis blandit. Nulla imperdiet molestie nunc. Curabitur consectetur nulla massa, sed vehicula mi dictum in."
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-col ant-col-12" style="padding-left:8px; padding-right: 8px;">
+                                    <div class="ant-row ant-row-start information-item" style="margin-left: -8px; margin-right: -8px; row-gap: 16px;">
+                                        <div class="ant-col ant-col-24" style="padding-left: 8px; padding-right: 8px;">
+                                            <div class="text" style="font-size: 1rem;">
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta ante dui, nec condimentum diam auctor nec. sInteger auctor turpis odio, eu lacinia lorem ultricies at. Morbi maximus in sem vitae tempor. Donec dictum lectus et bibendum faucibus. Integer mollis arcu sit amet mollis blandit. Nulla imperdiet molestie nunc. Curabitur consectetur nulla massa, sed vehicula mi dictum in."
+                                            </div>
+                                        </div>
+                                        <div class="ant-col ant-col-24" style="padding-left: 8px; padding-right: 8px;">
+                                            <div class="text" style="font-size: 1rem;">
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta ante dui, nec condimentum diam auctor nec. sInteger auctor turpis odio, eu lacinia lorem ultricies at. Morbi maximus in sem vitae tempor. Donec dictum lectus et bibendum faucibus."
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="banner-img"></div>
+                <div class="ant-row ant-row-start banner-title" style="row-gap: 0px;">
+                    <div class="ant-col ant-col-14">
+                        <div class="text" style="font-size: 2.5rem; color: white;">TIỆC TẠI GIA CHẤT NHÀ HÀNG</div>
+                    </div>
+                </div>
+                <div class="banner-info">
+                    <div class="item">
+                        <div>
+                            <div class="text" style="font-size: 3rem; color: white;">
+                                80
+                                <span>+</span>
+                            </div>
+                            <div class="text" style="font-size: 1rem; color: white;">MÓN ĂN ĐA DẠNG</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="text" style="font-size: 3rem; color: white;">
+                                6
+                                <span>+</span>
+                            </div>
+                            <div class="text" style="font-size: 1rem; color: white;">SET MENU TIÊU CHUẨN</div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="text" style="font-size: 3rem; color: white;">
+                                15
+                                <span>+</span>
+                            </div>
+                            <div class="text" style="font-size: 1rem; color: white;">NĂM KINH NGHIỆM</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <div class="text" style="font-size: 3rem; color: white;">
+                                100
+                                <span>+</span>
+                            </div>
+                            <div class="text" style="font-size: 1rem; color: white;">NHÂN VIÊN CHUYÊN NGHIỆP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="my-container">
+                    <div class="services-title">
+                        <div class="text" style="font-size: 2.5rem;">DỊCH VỤ CUNG CẤP</div>
+                    </div>
+                    <div class="ant-row ant-row-start ant-row-top service-list" style="margin-left: -16px; margin-right: -16px; row-gap:32px;">
+                        <div class="ant-col ant-col-12 service-item" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="service-icon">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAsoSURBVGhD7ZgJcBvlFcc/aWVdK2kly5Ys27J12JYs31d8xI4zATs4Q0IIp9PQtFOOUmjpkCkzFKYdGHoQoMOUQgtloEBISgohkGBMjEN8JHZ8xqrt+JRtyZJlW5YlWfe13dWsUxxfUoC6nelvRrPa772V/t9+x3vvA/9niyAR1y0nR5FS+HBO3DMC4E62AYrprDH49ofNHe8Q5jX5rxCfp0zddnMsdC8DQWjdJu8FhEaJFvltci8isL9S1/Is4bYKiLhuGWwWzLlditxvpHDG/3Su49nRaePgP6cM3VYqe1ZJ8xQCrsA7PWuaItxXQCauW8b+4uxDTITHPH6h83WiKcTg+KQahXn+3fLYu4mmVWy5+G28qKqxJb+auF3BmNWrllD9GQlCgZhoWsGWimcyGHA02R0/PLu4pniXz+8oEsdWPl6ufP7JfRUvlmarKglTiC2d8wppUqaSS889O6R/3+V2O4nma8yYrdP9DnLbmNUzgO8tfNSVUJ6dflPnmLYFt2+peHFcrFQVTSv8pE/zLtG0Ar/f75uYmRvVGGZH+ib1HT4a2ykie2QSmUw6pDWoV0ybzFRZ3oGKokMquSSbaPpOoUdFMVAUBInbTRnUTKqDMOIpimXuwu8poVaMlGSx8oc5ib/Yo0qqbbka1XCcy/nDhW51PWFeRTSXG5MtFxdKeOzUaDpFSCYBKIiCgN0XsE5bXZrx2YWh4YkpbLjXh0ohUyNddka7R5fFo5fh36+JL5QllNfIYmqRnXeAXTGXqjikZl4MvE14fZRLThDJbs1JqVUxQfFOCW8vBYkBZAYLm5JYvMNeI+rzAr/NDDpGqU2GPImmSW/79MuuvjOBQDBA/MQ13L6Ai0QKRqS+TMioWQiQDPj3a3MeotHJSQxUIRaJJEjlfiDgMONhw1VhilyumLS4hnwBv+97O4sfrk3l/6x2e85D2dW3KThltwJmTjlgphcBqkgCmMoCwMwowT7FQJadJ1Eg1LyqWPK9qQJuRpDN947rjUPE34UQ8nnxOdH0svOaudNBDKJ5XX5cVfKkz7bo/0yzcGx+0TK7Ij3YU5p/x6Ek6hPbDxzahpTvBW7NALA0fgB8c7rQmyXRmIBTtgewcitB0GUHzqEu4B69AnymGYAGfNgMgADE5gKaWAEYWEeocckgiG0iDnUrOP/Jh+ddAHI8VX/lsMW2tIj/n1gUJ6m7M3vivnOa4ivDYx0hEV+DQacz05ISVClY57m+JSEDIrG67VBjm3qwCbevym3wDjyYSHouTSpWCu9/FpDpMPDoRoB/cR7QJUpMIAUsXa4HDadPNdBIAbjPx2waNDm6LE73ApdJ5yey6VIFm1yYDOzpmenKHGTHfmxktoV+w9JwAnRfHe54fdT5dHNvf8P91duPPCp0vthn9rYBMjmIq8Hef4BMJmYECgCfQRE5AcX64Rz5lZMXLr8daidYMzHDE6XHcmKPcoMeYc7u/Uo4qwyQmWzgndUB28Uz4LJa3XpMGzja0Nl3hnhkFTwE4d9elH5fJct7R0lhfjmv+iCAsPVh/vwdMHzpvGYMZfWmAHveJzb4tcbBiU8RmMlj0qnY4vk3dpfHdlUzpfb6sIW0BmuKX+aB3duPFHBJu5KDNpWIDkkGl9AutR9ueqOl/3dmq3WBcNuQpPg46fcL5D+XUDyZNQ89voupKgaOnq9CnWgwkU4c+aj5IOEaMRsGqZ5xXdvZAe1xWqKcxKJASJ2Z/Lc/n2v/rcvjcREum2JdsluaR3T1TGECzT/YRo+HvHJ28W5AQfjA1t/ut7GEs9cv5HAJK8L2juvaOfFJTKrTAkchfLJ+fkFLmMKmf8rQU54uqRIb+3OwDRVwtu8DPLdFBFmNcLve2uBye1alB5sRdnpwRaPryFamFTB8Tg7M4zMM8wvYFhQ+d1YU/cBjs3onIa7ao+kHIkFMIj4CIptOQaOQGc1DU58TrmETtnicPqwDxRmKciTgFNC5fGq4HcCF83w20QyZNf7ml+0vcRMlbPpIuyApv0xES0wBxs4LNpQr8IzoZjaMyNcTkXgcfAQKVIpSps+JhDMCuHCqywqbKWz9mUvdH+BtvRpde74ypUzmNeUyM0tAIo0kX5zRW5tGdXUoRujBMIhYPA4+AqVZisoY1JVIZvNQo8msJ0wrOFBecF90wJ5gprCuCV9meNHTq4xyFWGFRhI9NQdIbZr8ERfUG8niveFi5K1zl17G9m00j0vZUahKCyVKXwcXDnvt0UYSrLleOM60cXaqy0ltdAxg8YlKB9R4GcgSsIsJc1jc0JtfBt+FCjOUpSlRrnwPk7e0PAK3leUfjAs6ZOYo9vSnF7v/HnJeA6PTp5XQ0MyUjEwZxOYBrbrH0GdyXLI7nUuEy4Z8I/E4PePaNpVSkVnE9FQDXpyvKDW5IgE4UmYgzvjp1q73Cbc1wWLAYolSWpkew8qjS9KB2DaV0aJfqtPNzk8QLhvyrdSwb527+PI8nT/xx1y4/lcZ8NsLVGT645bOY4R5Q0aW/Fd8JizDxZI6/MOD6TGEaVO+FfE4dm/AFsTjDBoEkwu2UaJ5Uww25xTq92JJKymUP/EY1P+s+Dt3bDt8T7T7yJuLyNOvaYNPlnJJNQXpaSWEeUNcXr8DL2ACTluonomEa5VUuITOFHPjnokLumRzgKbzkSC3DLVmHTfDL7zX2Poa7vPA7vIjJXzzLSA9DUuBR9pDD64DwqDxSFE0AMEINmhYPoyiqyqu9YjozeMF+sEM0WNV5WV7Cg79RFm970DVrrSEvVYSzfReY1tIOM5fv2h9yQfzHLlcqKI0O30n0bwmMh5TBcEcbOughAoci9NrIkybErZ4XDheoN9VvfMQr+YwwGvd6L0/AnDODkAFKINwu8YbX1x8AcIyx3wOaWdlXmY10bwKKZ2koklVIIjtjvj0Mdmds4RpU8ISvyx8X1l+Lad8H6DExGOFADZB8UVGZwIG8MGE6wreqG99IcCKdkto/ozK/NUdKM/NuAmvxuhJSqzUnAafX9Wf1M6aNIR5UzYVD0Fk6NG8+Odu5vpr0YAfuEZ6gG9WC/AUxI/Vru4xNXCiUTbCfRV/qW/9PYMbQ8tgBkq+3gH8qO+eVO4jNbdU30qCIOx3e8GQPdBlnMf3zfDYNEjhiRLEFaCjPmrvpGF+VG6bKIRYCCBFUYH1winQ2tzU+p7O//zo9MxV4pFVdI1pWwuwSBwdcMQjgnj25Mzs2E9vKf31PYXKB5GKfcA93g8+a2g8/Y/+6dcXLNZ54rFNCSvCDusM/Z2j2pY+o6WdxeOxVEy0yD3aBy63tLQd07pfrL/c+zHhui54B0qz0iulJGdmgkSaUMNxH5buOSjETxss50+CE2OWl7/qHYgop49otzFbrCaDI6BxDnWDzq7Ojne17qNfXO49TZg35dW6lt9YGby5uwTBx+QsclYUXwhC0RXbIj/rGjhJuIVNROJxrF6/ecTqUx/TeiMSvgy+BpqdjI/m7V4DfqaDT0E8wkYjnLAj6zcCP6ckvt4wp+4u7B9/9Zeoqb8THXjiAPpITcVThClsbiirXOssPVLw0zT63HistGhHQhRfBFxDncBE4UyHm1HifOOU+EZRT0x33p6RdDg24EhCKm4DwqBDGr1kEA85yd3h7jhbJh5n1Eu9Ig8u5oli+AlwVikQOIzSWLJX3Gdyty45HOvGjmW2VPycedEYJUgAAY2aIRUnymniVCCyTClajK6z4UyfLRWP0z+p7+HGJ7I9GjUk8iyk1I0YTjQM60/hVRbhsi4RZtDfHbuL8/ZLebDy3MDERxqdPuxi5n8UAP4F3IOqZ7KH0N0AAAAASUVORK5CYII=" alt="Tiệc cưới hỏi">
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <div class="text" style="font-size: 1.25rem;">TIỆC CƯỚI HỎI</div>
+                                </div>
+                                <div class="service-description">
+                                    <div class="text" style="font-size: 1rem;">
+                                        "Sự kiện đặc biệt, không thể thiếu đội ngũ tận tâm. Với thực đơn phong phú từ truyền thống tới hiện đại, cùng đội ngũ phục vụ chuyên nghiệp, Tiệc tại gia sẽ đồng hành cùng bạn và gia đình trong ngày vui một cách trọn vẹn nhất"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-col ant-col-12 service-item" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="service-icon">
+                                <img src="data:image/png;base64,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" alt="Tiệc buffet">
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <div class="text" style="font-size: 1.25rem;">TIỆC BUFFET</div>
+                                </div>
+                                <div class="service-description">
+                                    <div class="text" style="font-size: 1rem;">
+                                        "Tiệc buffet với nhiều lựa chọn thực đơn đa dạng dành cho các sự kiện lớn nhò, từ các hoạt động mở và có nhiều thời gian như gala dinner đến liên hoan nội bộ hay tiệc gia đình."
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-col ant-col-12 service-item" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="service-icon">
+                                <img src="data:image/png;base64,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" alt="Tiệc sự kiện">
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <div class="text" style="font-size: 1.25rem;">TIỆC SỰ KIỆN</div>
+                                </div>
+                                <div class="service-description">
+                                    <div class="text" style="font-size: 1rem;">
+                                        "Tiệc tại gia sẽ giúp bạn lo chu toàn các sự kiện lớn cho công ty, hội thảo cần sự chìn chu từ khâu chuẩn bị tới quy trình phục vụ chuyên nghiệp, đảm bảo hài lòng mọi khách hàng tham dự"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-col ant-col-12 service-item" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="service-icon">
+                                <img src="data:image/png;base64,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" alt="Tiệc tea break">
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <div class="text" style="font-size: 1.25rem;">TIỆC TEA BREAK</div>
+                                </div>
+                                <div class="service-description">
+                                    <div class="text" style="font-size: 1rem;">
+                                        "Tea break được tổ chức dưới hình thức tiệc đứng với trà, bánh ngọt, và hoa quả, diễn ra vào giữa giờ giải lao của các buổi hội nghị, khai trương,... giúp khách mời có khoảng thời gian thư giãn trước khi tiếp tục tham dự sự kiện."
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-col ant-col-12 service-item" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="service-icon">
+                                <img src="data:image/png;base64,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" alt="Tiệc tại gia">
+                            </div>
+                            <div class="service-detail">
+                                <div class="service-title">
+                                    <div class="text" style="font-size: 1.25rem;">TIỆC TẠI GIA</div>
+                                </div>
+                                <div class="service-description">
+                                    <div class="text" style="font-size: 1rem;">
+                                        "Tiết kiệm thời gian cho bữa tiệc ấm cúng, dành trọng khoảnh khắc sum vầy bên người thân yêu - Bạn chỉ cần lựa chọn thực đơn yêu thích, Tiệc tại gia sẽ mang trải nghiệm trọn vẹn với gia đình"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="motto">
+                <div class="my-container">
+                    <div class="motto-title">
+                        <div class="text" style="font-size: 2.5rem;">TÔN CHỈ PHỤC VỤ</div>
+                    </div>
+                    <div class="ant-row motto-description" style="row-gap: 0px;">
+                        <div class="ant-col ant-col-14 ant-col-offset-5">
+                            <div class="text" style="font-size: 1rem;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porta ante dui, nec condimentum diam auctor nec. sInteger auctor turpis odio, eu lacinia lorem ultricies at.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ant-row ant-row-start ant-row-top card-list" style="margin-left: -16px; margin-right: -16px; row-gap: 32px;">
+                        <div class="ant-col ant-col-8" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="card-item">
+                                <div class="card-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party15.05a1d6454f4739793874.PNG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <div class="text" style="font-size: 1.5rem; color: white;">THỰC PHẨM AN TOÀN CHẤT LƯỢNG NHÀ HÀNG</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-col ant-col-8" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="card-item">
+                                <div class="card-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party15.05a1d6454f4739793874.PNG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <div class="text" style="font-size: 1.5rem; color: white;">DỊCH VỤ CHU ĐÁO CHĂM SÓC TẬN TÂM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ant-col ant-col-8" style="padding-left: 16px; padding-right: 16px;">
+                            <div class="card-item">
+                                <div class="card-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party16.9df51108953e99cc6972.PNG" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <div class="text" style="font-size: 1.5rem; color: white;">ĐỒNG HÀNH TRONG MỌI LỰA CHỌN ẨM THỰC</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-top">
+                    <div class="footer-item about-us">
+                        <h3>Về chúng tôi</h3>
+                        <p>Số điện thoại: 095.366.4722</p>
+                        <p>Địa chỉ: số 33 Nhân Chính, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                    </div>
+                    <div class="footer-item paymethod">
+                        <h3>Phương thức thanh toán</h3>
+                        <div class="paymethod-container">
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                            </div>
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                            </div>
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                            </div>
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                            </div>
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                            </div>
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                            </div>
+                            <div class="paymethod-item">
+                                <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7g" alt="paymethod">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-item social">
+                        <h3>Truyền thông xã hội</h3>
+                        <a href="https://www.facebook.com/angihomnayy" class="social-link">
+                            <i class="fab fa-facebook-square"></i>
+                            <span>Facebook</span> 
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCu-dRjIS5WctBye76rvzRQA" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                            <span>Youtube</span>
+                        </a>
+                    </div>
+                    <div class="footer-item support">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <div>
+                            <p>
+                                <span>Liên hệ</span> Hotline: 036.555.1123 </p>
+                                <p class="email">Email: happy.@gmail.com</p>
+                            </div>
+                            <div>
+                                <p>
+                                    <span>Địa chỉ: </span> Số 33 Nhân Chính, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="line"></p>
+                        <div class="footer-bottom">
+                            <div class="bottom-left">
+                                <p class="title">Công ty TNHH Minh Trí</p>
+                                <p>số CND/DN/ cấp ngày 2/1/2020</p>
+                            </div>
+                            <div class="bottom-right">
+                                <div class="img">
+                                    <img src="data:image/png;base64,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" 
+                                    alt="Ảnh thông báo bản quyền">
+                                </div>
+                                <div>
+                                    <p>© Thông báo</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </footer>
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var modelElement = document.querySelector('.model');
+          modelElement.classList.toggle('active');
+        }
+      </script>
+      
+
+   
+</body>

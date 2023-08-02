@@ -1,0 +1,355 @@
+#account-setting {
+    background-color: silver;
+}
+.container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    width: 100%;
+}
+.account-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+}
+.account-setting-left {
+    background-color: #fff;
+    width: 22%;
+}
+.account-setting-left .left__avata {
+    border-bottom: 1px dashed #e4e4e4;
+    margin: 1.5rem 1.25rem;
+}
+.account-setting-left .left__avata i {
+    display: flex;
+    font-size: 6rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.fal, .far {
+    font-family: "Font Awesome 5 Pro";
+}
+.fal {
+    font-weight: 300;
+}
+.fa-user-circle:before {
+    content: "\f2bd";
+}
+.account-setting-left .left__avata p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 2.125rem;
+    text-align: center;
+}
+.account-setting-left .left__menu ul {
+    margin: 0 0 2.25rem;
+    padding: 0;
+}
+.account-setting-left .left__menu ul li {
+    list-style-type: none;
+    position: relative;
+}
+.account-setting-left .left__menu ul li a {
+    color: #737373;
+    display: block;
+    padding: .625rem 1.25rem;
+}
+.active-left {
+    color: #ce5628!important;
+}
+.account-setting-left .left__menu ul li i {
+    margin-right: .75rem;
+}
+.fa-user-edit:before {
+    content: "\f4ff";
+}
+.account-setting-right {
+    background-color: #fff;
+    width: 75%;
+}
+.ant-form {
+    font-feature-settings: "tnum","tnum";
+    box-sizing: border-box;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    grid-column-gap: 1.825rem;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    padding: 1.5rem 1rem .5rem;
+}
+.grid-item .ant-row, .modal-address .ant-row {
+    display: block;
+}
+.ant-form-item-control-input {
+    align-items: center;
+    display: flex;
+    min-height: 32px;
+    position: relative;
+}
+.ant-form-item-control-input-content {
+    flex: auto;
+    max-width: 100%;
+}
+.grid-container .grid-item .profile__input {
+    border: 1px solid #dadada;
+    margin-top: .5rem;
+}
+.grid-container .grid-item .profile__input input, .grid-container .grid-item .profile__input select {
+    border: none;
+    font-weight: 500;
+    outline: none;
+    padding: .64rem;
+    width: 100%;
+}
+
+.grid-item .ant-select-single:not(.ant-select-customize-input) .ant-select-selector, .grid-item div.ant-select, .grid-item input.ant-input {
+    height: 3.37rem;
+}
+.grid-item .ant-input, .modal-address .ant-input {
+    height: 30px;
+}
+
+.ant-input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+.ant-form-item {
+    font-feature-settings: "tnum","tnum";
+    box-sizing: border-box;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    transition: margin-bottom .3s linear 17ms;
+    vertical-align: top;
+}
+.grid-item .ant-row, .modal-address .ant-row {
+    display: block;
+}
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.profile__input div.ant-select {
+    display: flex;
+}
+
+.grid-item .ant-select-single:not(.ant-select-customize-input) .ant-select-selector, .grid-item div.ant-select, .grid-item input.ant-input {
+    height: 3.37rem;
+}
+.ant-form-item .ant-cascader-picker, .ant-form-item .ant-select {
+    width: 100%;
+}
+.ant-select {
+    font-feature-settings: "tnum","tnum";
+    box-sizing: border-box;
+    color: rgba(0,0,0,.85);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.grid-item .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    padding: 11px;
+}
+
+.grid-item .ant-select-single:not(.ant-select-customize-input) .ant-select-selector, .grid-item div.ant-select, .grid-item input.ant-input {
+    height: 3.37rem;
+}
+.grid-container .grid-item .date .profile__input .ant-select-selector, .profile__input .profile__gender .ant-select-selector {
+    border: none;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    position: relative;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+    height: 32px;
+    padding: 0 11px;
+    width: 100%;
+}
+.ant-select-single .ant-select-selector {
+    display: flex;
+}
+.ant-select-single.ant-select-show-arrow .ant-select-selection-search {
+    right: 25px;
+}
+
+.ant-select-single .ant-select-selector .ant-select-selection-search {
+    bottom: 0;
+    left: 11px;
+    position: absolute;
+    right: 11px;
+    top: 0;
+}
+span {
+    font-weight: 600;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+    height: 30px;
+}
+.grid-container .grid-item .profile__input input, .grid-container .grid-item .profile__input select {
+    border: none;
+    font-weight: 500;
+    outline: none;
+    padding: .64rem;
+    width: 100%;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector input {
+    cursor: pointer;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-search-input {
+    width: 100%;
+}
+.ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+    padding-right: 18px;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    pointer-events: none;
+    transition: none;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    line-height: 30px;
+    padding: 0;
+    transition: all .3s;
+}
+.ant-select-selection-placeholder {
+    color: #bfbfbf;
+    flex: 1 1;
+    overflow: hidden;
+    pointer-events: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+span {
+    font-weight: 600;
+}
+.ant-select-single .ant-select-selector .ant-select-selection-item:after, .ant-select-single .ant-select-selector .ant-select-selection-placeholder:after, .ant-select-single .ant-select-selector:after {
+    content: "\a0";
+    display: inline-block;
+    visibility: hidden;
+    width: 0;
+}
+.ant-select-arrow {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: inherit;
+    color: rgba(0,0,0,.25);
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    height: 12px;
+    line-height: 0;
+    line-height: 1;
+    margin-top: -6px;
+    pointer-events: none;
+    position: absolute;
+    right: 11px;
+    text-align: center;
+    text-transform: none;
+    top: 50%;
+    vertical-align: -.125em;
+    width: 12px;
+}
+.ant-select-arrow .anticon {
+    transition: transform .3s;
+    vertical-align: top;
+}
+
+.ant-select-arrow>* {
+    line-height: 1;
+}
+.anticon {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -.125em;
+}
+.ant-select-arrow .anticon>svg {
+    vertical-align: top;
+}
+.ant-select-arrow svg {
+    display: inline-block;
+}
+.anticon svg {
+    display: inline-block;
+}
+
+.anticon svg {
+    display: inline-block;
+}
+.anticon>* {
+    line-height: 1;
+}
+
+.anticon > * {
+    line-height: 1;
+}
+.right__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.button {
+    align-items: center;
+    background-color: #d2691e;
+    border: none!important;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-weight: 700;
+    height: 2rem;
+    justify-content: center;
+    outline: none!important;
+    width: 12rem;
+}
+.ant-form {
+    font-feature-settings: "tnum","tnum";
+    box-sizing: border-box;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin-bottom: 2.5rem;
+}

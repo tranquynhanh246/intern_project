@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_about_us.css">
+    <link rel="stylesheet" href="/css/style_news.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Thư viện CSS của Slick Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Thư viện JavaScript của Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascrit" src="/javascript/main.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div class="app">
+            <div class="root">
+                <div class="container">
+                    <div class="header-wrapper">
+                        <nav class="nav">
+                            <li>
+                                <a class="active" href="/html/index.html"> Trang chủ </a>
+                            </li>
+                            <li>
+                                <a class href="/"> Thực đơn </a>
+                            </li>
+                            <li>
+                                <a class href="./about_us.html"> Về chúng tôi </a>
+                            </li>
+                            <li>
+                                <a class href="/html/news.html">Tin tức</a>
+                            </li>
+                            <a class href="/html/order_button.html">
+                                <button class="button" style="width:8.5rem; height:2.5rem">Đặt tiệc ngay</button>
+                            </a>
+                        </nav>
+                        <div class="header-right">
+                            <div class="search">
+                                <div class="search-box">
+                                    <input type="text" placeholder="Tìm kiếm món ăn">
+                                </div>
+                                <div class="search-icon"> 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </div>
+                                <div class="account">
+                                    <div class="account-icon" onClick="myFunction()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="account-text">
+                                        <p>Tài khoản</p>
+                                    </div>
+                                    <div class="model">
+                                        <div class="model__item">
+                                            <ul>
+                                                <li><a href="/html/personal_info.html">Thông tin cá nhân</a></li>
+                                                <li><a href="/html/address.html">Cài đặt địa chỉ</a></li>
+                                                <li><a href="/html/index.html">Quản lý đơn hàng</a></li>
+                                                <li><a href="/html/coupon.html">Mã đã lưu</a></li>
+                                                <li><a  style='color:#d2691e; font-weight: 700;' href="/html/index.html">Đăng xuất</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <div class="cart-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                                            <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="cart-noti">
+                                        <p>1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-page2">
+                <div class="event-news2">
+
+                </div>
+            </div>
+
+            <div class="event-page">
+                <div class="event-news">
+                    <div class="event-news-title">Tin tức sự kiện</div>
+                    <div class="event-news-list">
+                        <div class="card-foods" datatype="blog">
+                            <div class="card-large">
+                                <img src="https://intern-project-chi.vercel.app/static/media/img-party1.a73e85144a0047dc89da.PNG" alt="">
+                                <h1>Gợi ý menu tiệc mini gia cho 12-15 người siêu ngon</h1>
+                                <p>
+                                    Kế thừa tinh hoa đầu bếp nổi tiếng, chúng tôi cung cấp giải pháp phục vụ tiệc tại gia đạt chuẩn chất lượng nhà hàng, giúp khách hàng tiết kiệm thời gian và công sức, dành chọn khoảnh khắc sum vầy bên những người thân yêu...
+                                </p>
+                                <p>12.02.2018</p>
+                                <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết </a>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party2.e3abcee2bf1dbf841e1c.PNG" alt="">
+                                    <h4>Hà Nội: Mách bạn những địa chỉ đặt cỗ Tết  chất lượng giá</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party3.6a1b6f55903c0e427b36.PNG" alt="">
+                                    <h4>Dịch vụ đặt cỗ tết bội thu mùa Covid</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party4.14696cba3d214a59a780.PNG" alt="">
+                                    <h4>Điểm tên 5 món ăn nóng chuẩn vị tiệc nhà hàng</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party5.a964fe30a1fcc520099b.PNG" alt="">
+                                    <h4>Gợi ý menu tiệc mini gia cho 12-15 người siêu ngon</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party6.f25f11d94016c1fd3598.PNG" alt="">
+                                    <h4>ĐẶT CỖ TẾT, 3 địa chỉ đặt cỗ Tết online siêu tiện lợi để lười vẫn có đồ ăn ngon</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party7.c8ba3b5db1b3728c30f7.PNG" alt="">
+                                    <h4>Nhộn nhịp "đặt" mâm cỗ Rằm tháng riêng online</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party8.38e6e5fe7a05fb3e7caf.PNG" alt="">
+                                    <h4>Đi chợ online, làm mâm cỗ chay 9 món cúng Rằm tháng 7</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party9.8f08e360e446a03747f5.PNG" alt="">
+                                    <h4>Cỗ Tết thời công nghệ, chị em hiện đại nhàn tênh</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party11.da04970a3f8c3097f128.PNG" alt="">
+                                    <h4>Nấu cỗ tại nhà Hà Nội. Mẹo Chọn Thực Đơn Cỗ Cưới Chuẩn Miền Bắc</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party11.da04970a3f8c3097f128.PNG" alt="">
+                                    <h4>Có người khoe cỗ cưới quê 11 món sang chảnh, bóc hải sản mỏi tay chỉ  1,8 triệu</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party12.07606cebd04b0fd01fd8.PNG" alt="">
+                                    <h4>Phát hiện ra chỗ nấu cỗ tại Hà Nội được nhiều người ưa chuộng</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                            <div class="card-list-food">
+                                <div class="title-img">
+                                    <img src="https://intern-project-chi.vercel.app/static/media/img-party13.85c83a411c80fd2319ce.PNG" alt="">
+                                    <h4>2 triệu đồng cho một mâm, chủ quán nấu cỗ chay không kịp thở</h4>
+                                </div>
+                                <div class="date-link">
+                                    <p>12.02.2018</p>
+                                    <a href="/html/card-large-news.html" style="text-decoration: underline;">Xem chi tiết    </a>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="event-news-pages">
+                        <ul class="ant-pagination" unselectable="unselectable">
+                            <li title="Previous Page" class="ant-pagination-prev ant-pagination-disabled" aria-disabled="true">
+                                <button class="ant-pagination-item-link" type="button" tabindex="-1" disabled="">
+                                    <span role="img" aria-label="left" class="anticon anticon-left">
+                                        <svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                            <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </li>
+                            <li title="1" class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active" tabindex="0">
+                                <a rel="nofollow">1</a>
+                            </li>
+                            <li title="2" class="ant-pagination-item ant-pagination-item-2" tabindex="0">
+                                <a rel="nofollow">2</a>
+                            </li><li title="3" class="ant-pagination-item ant-pagination-item-3" tabindex="0">
+                                <a rel="nofollow">3</a>
+                            </li>
+                            <li title="4" class="ant-pagination-item ant-pagination-item-4" tabindex="0">
+                                <a rel="nofollow">4</a>
+                            </li>
+                            <li title="5" class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-before-jump-next" tabindex="0">
+                                <a rel="nofollow">5</a>
+                            </li>
+                            <li title="Next 5 Pages" tabindex="0" class="ant-pagination-jump-next ant-pagination-jump-next-custom-icon">
+                                <a class="ant-pagination-item-link">
+                                    <div class="ant-pagination-item-container">
+                                        <span role="img" aria-label="double-right" class="anticon anticon-double-right ant-pagination-item-link-icon">
+                                            <svg viewBox="64 64 896 896" focusable="false" data-icon="double-right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                <path d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 00188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 00492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="ant-pagination-item-ellipsis">•••</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li title="12" class="ant-pagination-item ant-pagination-item-12" tabindex="0">
+                                <a rel="nofollow">12</a>
+                            </li>
+                            <li title="Next Page" tabindex="0" class="ant-pagination-next" aria-disabled="false">
+                                <button class="ant-pagination-item-link" type="button" tabindex="-1">
+                                    <span role="img" aria-label="right" class="anticon anticon-right">
+                                        <svg viewBox="64 64 896 896" focusable="false" data-icon="right" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                            <path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="ant-pagination-options">
+                                <div class="ant-select ant-pagination-options-size-changer ant-select-single ant-select-show-arrow" aria-label="Page Size">
+                                    <div class="ant-select-selector">
+                                        <span class="ant-select-selection-search">
+                                            <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="rc_select_0_list" aria-autocomplete="list" aria-controls="rc_select_0_list" aria-activedescendant="rc_select_0_list_0" aria-label="Page Size" readonly="" unselectable="on" value="" id="rc_select_0" style="opacity: 0;"></span>
+                                            <span class="ant-select-selection-item" title="10 / page">10 / page</span>
+                                        </div>
+                                        <span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;">
+                                            <span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix">
+                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <footer>
+                    <div class="footer-top">
+                        <div class="footer-item about-us">
+                            <h3>Về chúng tôi</h3>
+                            <p>Số điện thoại: 095.366.4722</p>
+                            <p>Địa chỉ: số 33 Nhân Chính, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                        </div>
+                        <div class="footer-item paymethod">
+                            <h3>Phương thức thanh toán</h3>
+                            <div class="paymethod-container">
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7g" alt="paymethod">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-item social">
+                            <h3>Truyền thông xã hội</h3>
+                            <a href="https://www.facebook.com/angihomnayy" class="social-link">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span> 
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCu-dRjIS5WctBye76rvzRQA" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>Youtube</span>
+                            </a>
+                        </div>
+                        <div class="footer-item support">
+                            <h3>Hỗ trợ khách hàng</h3>
+                            <div>
+                                <p>
+                                    <span>Liên hệ</span> Hotline: 036.555.1123 </p>
+                                    <p class="email">Email: happy.@gmail.com</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>Địa chỉ: </span> Số 33 Nhân Chính, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="line"></p>
+                            <div class="footer-bottom">
+                                <div class="bottom-left">
+                                    <p class="title">Công ty TNHH Minh Trí</p>
+                                    <p>số CND/DN/ cấp ngày 2/1/2020</p>
+                                </div>
+                                <div class="bottom-right">
+                                    <div class="img">
+                                        <img src="data:image/png;base64,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" 
+                                        alt="Ảnh thông báo bản quyền">
+                                    </div>
+                                    <div>
+                                        <p>© Thông báo</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </footer>
+
+
+                
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var modelElement = document.querySelector('.model');
+          modelElement.classList.toggle('active');
+        }
+      </script>
+
+</body>

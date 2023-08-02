@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script type="text/javascrit" src="/javascript/main.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/personal_info.css">
+
+</head>
+<body>
+    <div id="root">
+        <div class="app">
+            <div>
+                <div class="root">
+                    <div class="container">
+                        <div class="header-wrapper">
+                            <nav class="nav">
+                                <li>
+                                    <a aria-current="page" class="active" href="/html/index.html"> Trang chủ </a>
+                                </li>
+                                <li>
+                                    <a class href=""> Thực đơn </a>
+                                </li>
+                                <li>
+                                    <a class href="/html/about_us.html">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a class href="/html/news.html">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a class href="/html/order_button.html">
+                                        <button class="button" style="width:8.5rem; height: 2.5rem;">Đặt tiệc ngay</button>
+                                    </a>
+                                </li>
+                            </nav>
+                            <div class="header-right">
+                                <div class="search">
+                                    <div class="search-input">
+                                        <input type="text" placeholder="Tìm kiếm món ăn">
+                                    </div>
+                                    <div class="search-image">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVHgBlZCBDYIwFERPJ+gIfwRHYIRuoCO4gWwCI+gEjCAbECfADfRqj1jID4RLXtr+z5V/Bf4K5EaeZNTaEIMj0wcdiTpXpJX5vDQ0anq6yGTl7bOCo5bU0+FK7lhX1Mg4qjBuGN7TJhl65IBrOpFXWRjgvIRk6seyWJEPcp5lfRABzm9TI+Xpin2NHDgRDvDnNeSgvdagSx7Yod9IX21cJPyOvc8OAAAAAElFTkSuQmCC" alt="icon-search">
+                                    </div>
+                                </div>
+                                <div class="account">
+                                    <div class="account-icon" onClick="myFunction()">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFpSURBVHgBlVWBcYMwDHwyARvUG5QNQjdIJygjsAFsUDZIN6CdgG5AOwF0AkagdngHxcik/bsPF0l+JFk2CfaRkYb/vyxHPv+FynKynC0Hy47sha34i5DhIidWW6aRmIKiA9bs1UAn1EaEtPiWopnmdI4msOdYSvXld7RJNFqmZxolKiFSkr6HZRDbM9trdnPwBm+rsUVDXxZUMvN5CeiglxHDhG17nEZzsD9Hy4/A+Wj5jTg+sd1dp3E80BEO6o/lA+LQpmD0L7nWLnCK2B0y+orAntN+6cdJWeh2Tp6IlHETfVAEJ7+wjGTi509ygjLI1OgSLKPhNuYpEPMn5h3rBjn7C5Z+PeO2952P8z3J6TCiLIMtDF8mM80RzPIbBVK+acD989xjnV8Xf5bOlMYW+g5qyLEeTfXWMXTM2LmSgiT2NulG1PEV8R5WFNq9DyUKrNm6hf7GlrZaW5jcEfbfE1/SiGVUot+UX3+PeNnpLVbnAAAAAElFTkSuQmCC" alt="icon-account">
+                                    </div>
+                                    <div class="account-text">
+                                        <p>Tài khoản</p>
+                                    </div>
+                                    <div class="model">
+                                        <div class="model__item">
+                                            <ul>
+                                                <li><a href="/html/personal_info.html">Thông tin cá nhân</a></li>
+                                                <li><a href="/html/address.html">Cài đặt địa chỉ</a></li>
+                                                <li><a href="/html/index.html">Quản lý đơn hàng</a></li>
+                                                <li><a href="/html/coupon.html">Mã đã lưu</a></li>
+                                                <li><a style='color:#d2691e; font-weight: 700;' href="/html/index.html">Đăng xuất</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <div class="cart-image">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEjSURBVHgBrVSBUcMwDPz2OkA2aDbAI2QDsgFhgnYD2ABGCCMwQcMEZQPMBIQJgkVejeq6aXvnv/tTrMhvyVICnKIIrJAZu8Ah8AEZsaXoT2CJjGgpvEdGyL1+UfgFGVFRdMCNjVvQOozZxXiioA98xGV48r+8ISPrBR9E/W0mAxmvEmMDv8/ESKUbiVkZxxrzZZWYH7Gj63tGvtJltmsV3tFZXJtJlHXD/Y0N0K9oy/WeB8Xv10bQxmtS4seSzpb2nrbHOErFmSwrWk8hWXdcH0R7OlXonX6HNPTwT3PAYXqWJlCFGgYLaqThGOMx/c26lGhrsui4QdHT/mK6ig8kSk9BL9xhmkulSzxvkOh6DO3yrbNZWpFVJPpKe4frIQ3y1vEHsct2Y7HmFPwAAAAASUVORK5CYII=" alt="icon-cart">
+                                    </div>
+                                    <div class="cart-icon">
+                                        <p>1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <section id="account-setting">
+                    <div class="container">
+                        <div class="account-setting">
+                            <div class="account-setting-left">
+                                <div class="left__avata">
+                                    <i class="fal fa-user-circle"></i>
+                                    <p>Nguyễn Văn A</p>
+                                </div>
+                                <div class="left__menu">
+                                    <ul>
+                                        <li>
+                                            <a aria-current="page" class="active-left active-border-left" href="/html/personal_info.html">
+                                                <i class="fal fa-user-edit"></i>
+                                                Thông tin cá nhân
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class href="/html/address.html">
+                                                <i class="fal fa-route"></i>
+                                                Cài đặt địa chỉ 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class href="/html/index.html">
+                                                <i class="fal fa-shopping-cart"></i>
+                                                Quản lý đơn hàng
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class href="/html/coupon.html">
+                                                <i class="fal fa-save"></i>
+                                                Mã đã lưu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class href="/html/index.html">
+                                                <i class="fal fa-sign-out"></i>
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="account-setting-right">
+                                <form id="basic" autocomplete="off" class="ant-form ant-form-horizontal">
+                                    <div class="grid-container">
+                                        <div class="grid-item">
+                                            <div class="ant-row ant-form-item" style="row-gap: 0px;">
+                                                <div class="ant-col ant-col-4 ant-form-item-label">
+                                                    <label for="basic_name" class="ant-form-item-required" title="Họ tên">Họ tên</label>
+                                                </div>
+                                                <div class="ant-col ant-col-16 ant-form-item-control">
+                                                    <div class="ant-form-item-control-input">
+                                                        <div class="ant-form-item-control-input-content">
+                                                            <div class="profile__input" id="basic_name">
+                                                                <input placeholder="Nhập họ tên" type="text" class="ant-input" value>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="ant-row ant-form-item" style="row-gap: 0px;">
+                                                <div class="ant-col ant-col-4 ant-form-item-label">
+                                                    <label for="basic_gender" class title="Giới tính">Giới tính</label>
+                                                </div>
+                                                <div class="ant-col ant-col-16 ant-form-item-control">
+                                                    <div class="ant-form-item-control-input">
+                                                        <div class="ant-form-item-control-input-content">
+                                                            <div class="profile__input" id="basic_gender">
+                                                                <div class="ant-select profile__gender ant-select-single ant-select-allow-clear ant-select-show-arrow">
+                                                                    <div class="ant-select-selector">
+                                                                        <span class="ant-select-selection-search">
+                                                                            <input autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="rc_select_0_list" aria-autocomplete="list" aria-controls="rc_select_0_list" aria-activedescendant="rc_select_0_list_0" readonly="" unselectable="on" value="" id="rc_select_0" style="opacity: 0;"></span>
+                                                                            <span class="ant-select-selection-placeholder">Lựa chọn</span>
+                                                                        </div>
+                                                                        <span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;">
+                                                                            <span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix">
+                                                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                                                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="ant-row ant-form-item" style="row-gap: 0px;">
+                                                <div class="ant-col ant-col-4 ant-form-item-label">
+                                                    <label for="basic_phoneNumber" class="ant-form-item-required" title="Số điện thoại">Số điện thoại</label>
+                                                </div>
+                                                <div class="ant-col ant-col-16 ant-form-item-control">
+                                                    <div class="ant-form-item-control-input">
+                                                        <div class="ant-form-item-control-input-content">
+                                                            <div class="phone-number" id="basic_phoneNumber">
+                                                                <div class="profile__input">
+                                                                    <input placeholder="Nhập số điện thoại" type="text" class="ant-input" value="">
+                                                                </div>
+                                                                <div class="check-comfirm"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="ant-row ant-form-item" style="row-gap: 0px;">
+                                                <div class="ant-col ant-col-4 ant-form-item-label">
+                                                    <label for="basic_date" class="" title="Ngày sinh">Ngày sinh</label>
+                                                </div>
+                                                <div class="ant-col ant-col-16 ant-form-item-control">
+                                                    <div class="ant-form-item-control-input">
+                                                        <div class="ant-form-item-control-input-content">
+                                                            <div class="date" id="basic_date">
+                                                                <div class="profile__input">
+                                                                    <div class="ant-select ant-select-single ant-select-allow-clear ant-select-show-arrow">
+                                                                        <div class="ant-select-selector">
+                                                                            <span class="ant-select-selection-search">
+                                                                                <input id="day" autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="day_list" aria-autocomplete="list" aria-controls="day_list" aria-activedescendant="day_list_0" readonly="" unselectable="on" value="" style="opacity: 0;"></span>
+                                                                                <span class="ant-select-selection-placeholder">Ngày</span>
+                                                                        </div>
+                                                                        <span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;">
+                                                                            <span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix">
+                                                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                                                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="profile__input">
+                                                                    <div class="ant-select ant-select-single ant-select-allow-clear ant-select-show-arrow">
+                                                                        <div class="ant-select-selector">
+                                                                            <span class="ant-select-selection-search">
+                                                                                <input id="mon" autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="mon_list" aria-autocomplete="list" aria-controls="mon_list" aria-activedescendant="mon_list_0" readonly="" unselectable="on" value="" style="opacity: 0;"></span>
+                                                                            <span class="ant-select-selection-placeholder">Tháng</span>
+                                                                        </div>
+                                                                        <span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;">
+                                                                            <span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix">
+                                                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                                                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="profile__input">
+                                                                    <div class="ant-select ant-select-single ant-select-allow-clear ant-select-show-arrow">
+                                                                        <div class="ant-select-selector">
+                                                                            <span class="ant-select-selection-search">
+                                                                                <input id="year" autocomplete="off" type="search" class="ant-select-selection-search-input" role="combobox" aria-haspopup="listbox" aria-owns="year_list" aria-autocomplete="list" aria-controls="year_list" aria-activedescendant="year_list_0" readonly="" unselectable="on" value="" style="opacity: 0;"></span>
+                                                                            <span class="ant-select-selection-placeholder">Năm</span>
+                                                                        </div>
+                                                                        <span class="ant-select-arrow" unselectable="on" aria-hidden="true" style="user-select: none;">
+                                                                            <span role="img" aria-label="down" class="anticon anticon-down ant-select-suffix">
+                                                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                                                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid-item">
+                                            <div class="ant-row ant-form-item" style="row-gap: 0px;">
+                                                <div class="ant-col ant-col-4 ant-form-item-label">
+                                                    <label for="basic_email" class="" title="Email">Email</label>
+                                                </div>
+                                                <div class="ant-col ant-col-16 ant-form-item-control">
+                                                    <div class="ant-form-item-control-input">
+                                                        <div class="ant-form-item-control-input-content">
+                                                            <div class="profile__input" id="basic_email">
+                                                                <input placeholder="Nhập email nhận ưu đãi" type="text" class="ant-input" value="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right__btn">
+                                        <button class="button" style="width: 9.75rem; height: 3.5rem;">Lưu thông tin</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div class="footer-top">
+                        <div class="footer-item about-us">
+                            <h3>Về chúng tôi</h3>
+                            <p>Số điện thoại: 095.366.4722</p>
+                            <p>Địa chỉ: số 33 Nhân Chính, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                        </div>
+                        <div class="footer-item paymethod">
+                            <h3>Phương thức thanh toán</h3>
+                            <div class="paymethod-container">
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="paymethod">
+                                </div>
+                                <div class="paymethod-item">
+                                    <img src="https://th.bing.com/th/id/OIP.CSv0D_Pv2hzbhGo6UWoLAgHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7g" alt="paymethod">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-item social">
+                            <h3>Truyền thông xã hội</h3>
+                            <a href="https://www.facebook.com/angihomnayy" class="social-link">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span> 
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCu-dRjIS5WctBye76rvzRQA" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>Youtube</span>
+                            </a>
+                        </div>
+                        <div class="footer-item support">
+                            <h3>Hỗ trợ khách hàng</h3>
+                            <div>
+                                <p>
+                                    <span>Liên hệ</span> Hotline: 036.555.1123 </p>
+                                    <p class="email">Email: happy.@gmail.com</p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>Địa chỉ: </span> Số 33 Nhân Chính, Trung Hòa, Cầu Giấy, Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="line"></p>
+                            <div class="footer-bottom">
+                                <div class="bottom-left">
+                                    <p class="title">Công ty TNHH Minh Trí</p>
+                                    <p>số CND/DN/ cấp ngày 2/1/2020</p>
+                                </div>
+                                <div class="bottom-right">
+                                    <div class="img">
+                                        <img src="data:image/png;base64,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" 
+                                        alt="Ảnh thông báo bản quyền">
+                                    </div>
+                                    <div>
+                                        <p>© Thông báo</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
+    <script>
+        function myFunction() {
+          var modelElement = document.querySelector('.model');
+          modelElement.classList.toggle('active');
+        }
+      </script>
+      
+      
+</body>

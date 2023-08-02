@@ -1,0 +1,530 @@
+body {
+    font-feature-settings: "tnum","tnum";
+    background-color: #fff;
+    color: rgba(0,0,0,.85);
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    margin: 0;
+}
+.header-wrapper, .root {
+    display: flex;
+    width: 100%;
+}
+
+.root {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    height: 5rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+}
+.container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    width: 100%;
+}
+.header-wrapper {
+    justify-content: space-between;
+}
+
+.header-wrapper, .root {
+    display: flex;
+    width: 100%;
+}
+.nav {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+.nav li a {
+    color: #000;
+    display: block;
+    font-weight: 700;
+    margin: 0 1.5rem;
+    padding: .5rem 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a {
+    color: #000;
+}
+a:hover {
+    -webkit-text-decoration-skip: objects;
+    background-color: transparent;
+    color: #1890ff;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: color .3s;
+}
+.button {
+    align-items: center;
+    background-color: #d2691e;
+    border: none!important;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-weight: 700;
+    height: 2rem;
+    justify-content: center;
+    outline: none!important;
+    width: 12rem;
+}
+.header-right {
+    align-items: center;
+    display: flex;
+}
+.search {
+    align-items: center;
+    display: flex;
+}
+.account, .account-icon {
+    align-items: center;
+    display: flex;
+}
+.account-icon {
+    width: 1.25rem;
+}
+
+.account {
+    cursor: pointer;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+    width: 5rem;
+}
+.cart {
+    margin-left: 2.5rem;
+    position: relative;
+}
+.search-input input {
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: .75rem;
+    outline: none;
+    padding-bottom: .3125rem;
+    padding-right: 1rem;
+    width: 9.75rem;
+}
+.search .search-image {
+    position: relative;
+    right: 7%;
+}
+img {
+    border-style: none;
+    vertical-align: middle;
+}
+
+img:hover {
+    transition: .3s linear;
+}
+.account-icon img {
+    object-fit: cover;
+    width: 100%;
+}
+.account-text {
+    align-items: center;
+    display: flex;
+    font-size: .75rem;
+    height: 1rem;
+}
+.account-text p {
+    color: #000;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+p {
+    margin: 0;
+}
+.cart {
+    margin-left: 2.5rem;
+    position: relative;
+}
+.cart-image {
+    align-items: center;
+    display: flex;
+    height: 1.18rem;
+    width: 1.3rem;
+}
+.cart-image img {
+    object-fit: cover;
+    width: 100%;
+}
+.cart-icon {
+    background-color: #d2691e;
+    border-radius: 50%;
+    color: #fff;
+    height: 1rem;
+    position: absolute;
+    right: -.5rem;
+    text-align: center;
+    top: 0;
+    width: 1rem;
+}
+.cart-icon p {
+    align-items: center;
+    display: flex;
+    font-size: .75rem;
+    height: 1rem;
+    justify-content: center;
+    width: 1rem;
+}
+.my-container {
+    margin-left: 6.4rem;
+    margin-right: 6.4rem;
+}
+.content {
+    margin-top: 2rem;
+}
+
+.ant-row-space-between {
+    justify-content: space-between;
+}
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.ant-row {
+    flex-flow: row wrap;
+}
+.ant-col-6 {
+    display: block;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.ant-col {
+    max-width: 100%;
+    min-height: 1px;
+    position: relative;
+}
+.content .title .text {
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+a {
+    color: #000;
+}
+.ant-col-16 {
+    display: block;
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+}
+
+.ant-col {
+    max-width: 100%;
+    min-height: 1px;
+    position: relative;
+}
+.content .detail iframe {
+    aspect-ratio: 4/3;
+    width: 100%;
+}
+iframe {
+    overflow-clip-margin: content-box !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    overflow: clip !important;
+}
+.banner, .information {
+    margin-top: 2rem;
+}
+.ant-row-start {
+    justify-content: flex-start;
+}
+
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.ant-row {
+    flex-flow: row wrap;
+}
+.ant-col-12 {
+    display: block;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.ant-col {
+    max-width: 100%;
+    min-height: 1px;
+    position: relative;
+}
+.ant-row-start {
+    justify-content: flex-start;
+}
+
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.ant-row {
+    flex-flow: row wrap;
+}
+.ant-col-24 {
+    display: block;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.banner {
+    position: relative;
+}
+
+.banner, .information {
+    margin-top: 2rem;
+}
+.banner .banner-img {
+    background-image: url('https://intern-project-chi.vercel.app/static/media/img-party5.a964fe30a1fcc520099b.PNG');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    height: 25rem;
+}
+.banner .banner-title {
+    font-weight: 600;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+}
+
+.ant-row-start {
+    justify-content: flex-start;
+}
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.ant-row {
+    flex-flow: row wrap;
+}
+.ant-col-14 {
+    display: block;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+}
+.banner .banner-title {
+    font-weight: 600;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+}
+.banner .banner-info {
+    bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+}
+.banner .banner-info .item .text {
+    margin-bottom: 0;
+}
+.banner .banner-info .item span {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: -10%;
+}
+
+span {
+    font-weight: 600;
+}
+.services {
+    background-color: #f3f3f3;
+    padding-bottom: 4.75rem;
+    padding-top: 6.25rem;
+    text-align: center;
+}
+.services .my-container {
+    margin: 0 13rem;
+}
+.services-title .text {
+    font-weight: 600;
+}
+.service-list {
+    margin-top: 4rem;
+}
+
+.ant-row-top {
+    align-items: flex-start;
+}
+.ant-row-start {
+    justify-content: flex-start;
+}
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.ant-row {
+    flex-flow: row wrap;
+}
+.service-item {
+    display: flex;
+}
+.service-icon {
+    margin-right: 1rem;
+    width: 10%;
+}
+.service-icon img {
+    width: 100%;
+}
+.service-detail {
+    flex: 1 1;
+    margin-left: .5rem;
+    text-align: left;
+}
+.service-detail .service-title .text {
+    margin-bottom: .5rem;
+}
+.service-detail .service-description .text {
+    margin-bottom: 0;
+}
+.motto {
+    padding-bottom: 4.75rem;
+    padding-top: 6.25rem;
+    text-align: center;
+}
+.my-container {
+    margin-left: 6.4rem;
+    margin-right: 6.4rem;
+}
+.motto-title {
+    margin-bottom: 2rem;
+}
+.motto-title .text {
+    font-weight: 600;
+}
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+
+.ant-row {
+    flex-flow: row wrap;
+}
+.ant-col-offset-5 {
+    margin-left: 20.83333333%;
+}
+.card-list {
+    margin-top: 4rem;
+}
+
+.ant-row-top {
+    align-items: flex-start;
+}
+.ant-row-start {
+    justify-content: flex-start;
+}
+.ant-row, .ant-row:after, .ant-row:before {
+    display: flex;
+}
+.ant-row {
+    flex-flow: row wrap;
+}
+.ant-col-8 {
+    display: block;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+.card-item {
+    position: relative;
+}
+.card-img {
+    overflow: hidden;
+}
+.card-item .card-img img {
+    aspect-ratio: 1;
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    width: 100%;
+}
+.card-item .card-title {
+    bottom: 10%;
+    margin: 0 2rem;
+    position: absolute;
+    text-align: center;
+}
+footer{
+    background-image: url('https://intern-project-chi.vercel.app/static/media/background-footer.3db8104f4c43054ea542.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear:both;
+    border-bottom: 1px solid #333;
+    
+
+}
+
+.footer-top{
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    margin: 0 6.375rem;
+    padding: 1.25rem 0;
+}
+.footer-items{
+    margin-left: 2.5rem;
+}
+.footer-item h3{
+    color: white;
+    font-size: 1.3rem;
+}
+.footer-item p{
+    color: white;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+.paymethod-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.paymethod-item{
+    margin-left: 0.5rem;
+
+}
+.paymethod-container .paymethod-item img{
+    object-fit: cover;
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    transition: .3s linear;
+}
+.line {
+    border-bottom: 1px solid white;
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin: 0 6.375rem;
+    padding: 1.5rem 0;
+}
+.footer-bottom .bottom-left .title {
+    font-size: 1.25rem;
+    color: white;
+}
+p{
+    color: white;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+.footer-bottom .bottom-right .img {
+    width: 30%;
+}
+.footer-bottom .bottom-right img {
+    object-fit: cover;
+    width: 100%;
+}
+.footer-bottom .bottom-right p {
+    color: white;
+}
+
